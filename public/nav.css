@@ -1,0 +1,76 @@
+.main-nav{
+    
+    /* background: black; */
+    display: flex;
+}
+.nav-name{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 80px;
+    margin-left: 20px;
+    /* margin-top: 20px; */
+    transition: 0.4s ease-in-out;
+    
+    
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 80px;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+    transition: 0.4s ease-in-out;
+}
+a:hover{
+    text-decoration: none !important;
+    color: rgb(203, 203, 203) !important;
+}
+
+.logo{
+    display: flex;
+}
+.options{
+    /* width: 50%; */
+   
+    position: absolute;
+    right: 0;
+    top: 10px;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.nav-line{
+    height: 7px;
+    width: 294px;
+    top: 6px;
+    /* background-color: #fddb3a; */
+}
+.dot{
+    position: absolute;
+    left: 30px;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    /* color: #fddb3a; */
+    background-color:rgb(203, 203, 203);
+ 
+    transition: 0.2s ease-in-out;
+   
+}
+@media screen and (max-width: 960px) {
+    .main-nav{
+        font-size: 0.9rem;
+        
+    }
+}
