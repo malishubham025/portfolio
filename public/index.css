@@ -5,11 +5,13 @@ body{
     /* cursor: none !important; */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    
+    overflow-x: hidden !important;
     /* cursor: e-resize; */
 background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
 
 .p2{
     position: absolute;
@@ -89,6 +91,7 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
     position: relative ;
     /* left: 300px; */
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
    
@@ -493,10 +496,10 @@ margin-left: 25%;
     /* height: fit-content; */
     padding-bottom: 20px;
     position: relative;
-    width: 100vw !important;
+    width: 100%;
+    padding-right: 50px;
     
 }
-
 .pHeader{
     /* display: block; */
     position: relative;
@@ -695,8 +698,16 @@ transition: 0.5s ease-in-out;
     padding: 0;
     margin: 0;
 }
+/* @media screen and (max-width: 1090px){
+    .projects{
+        padding-right: 50px;
+    }
+} */
 @media screen and (max-width: 960px) {
 
+    .projects{
+        padding-right: 50px;
+    }
     .projects > div {
         flex-direction: column;
         align-items: center;
@@ -717,14 +728,7 @@ transition: 0.5s ease-in-out;
         right: 140px;
         /* margin: 0 auto 0 auto; */
     }
-    /* .projects > div > div {
-        width: 100%;
-        padding: 20px;
-    } */
-    /* .projects > div > div > div {
-        width: 100%;
-        margin-top: 20px;
-    } */
+    
     .popUp{
         width: 50%;
         position: relative;
@@ -766,11 +770,13 @@ transition: 0.5s ease-in-out;
         width: 30%;
         font-size: 1.5rem;
     }
-    .project {
-        width: 100vw;
-        /* Additional mobile styles if needed */
+    .root{
+        width:100vw ;
     }
+  
 }
+
+
 .container{
     /* width: 100%;
     margin: 0 !important; */

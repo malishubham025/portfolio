@@ -8,19 +8,19 @@ import About from './components/About';
 import Footer from "./components/footer";
 ReactDOM.render(
   <div>
-    <Nav/>
-    <div style={{display:"flex",flexDirection:"column"}}>
-      <div style={{height:"550px"}}>
-      <Name/>
-      </div>
-      <div>
-      <Lorem/>
-      </div>
-    </div>
-    <div>
-    <About/>
-      </div>
-      <div>
+        <Nav/>
+        <div className='trans' style={{display:"flex",flexDirection:"column",width:"100%"}}>
+              <div style={{height:"550px"}}>
+              <Name/>
+              </div>
+              <div>
+              <Lorem/>
+              </div>
+        </div>
+        <div>
+        <About/>
+        </div>
+        <div>
         <Footer/>
         </div>
   </div>

@@ -9,6 +9,7 @@ function Lorem(){
         AOS.init({ duration: 1000 });
     },[])
     return (
+        <div className="main-projects">
         <div className="projects" id="work">
             <div style={{width:"100%"}}>
             <h1 className="pHeader" data-aos="fade-right">My Projects </h1>
@@ -54,6 +55,7 @@ function Lorem(){
                 <Project name="2048 AI" src="/videos/AI 2048.mp4"></Project>
                 
             </div>
+        </div>
         </div>
     )
 }
