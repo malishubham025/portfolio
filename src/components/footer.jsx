@@ -27,14 +27,11 @@ function Footer() {
           <a href="https://github.com/malishubham025/" data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
             <p>GitHub</p>
           </a>
-          <a href="https://www.instagram.com/malishubham025/">
-          <p data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
-            Instagram
-          </p>
-          </a>
-          <p onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
+
+          <p onMouseEnter={handleMouseEnter} onClick={handleMouseEnter} onMouseLeave={handleMouseLeave} data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
             Gmail
           </p>
+          
           {popupVisible && (
             <div className="popup">
               {/* Your pop-up content here */}
