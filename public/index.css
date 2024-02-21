@@ -706,7 +706,7 @@ transition: 0.5s ease-in-out;
 @media screen and (max-width: 960px) {
 
     .projects{
-        padding-right: 50px;
+        padding-right: 70px;
     }
     .projects > div {
         flex-direction: column;
