@@ -17,16 +17,22 @@ function Footer() {
 
   return (
     <div className="fo">
-      <div className="inner_fo" id="contact">
-        <h1 style={{ fontWeight: "100", fontSize: "2.3rem" }}>Find Me on</h1>
+     
+      <div className="inner_fo" id="contact" >
+        <h1 style={{ fontWeight: "100", fontSize: "2.3rem" }} data-aos={"fade-right"}>Find Me on</h1>
         <div className="links">
-          <a href="https://www.linkedin.com/in/shubham-mali-5a0686228/" style={{ color: "white", textDecoration: "none" }}>
+          <a href="https://www.linkedin.com/in/shubham-mali-5a0686228/" data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
             <p>LinkedIN</p>
           </a>
-          <a href="https://github.com/malishubham025/" style={{ color: "white", textDecoration: "none" }}>
+          <a href="https://github.com/malishubham025/" data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
             <p>GitHub</p>
           </a>
-          <p onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ color: "white", textDecoration: "none" }}>
+          <a href="https://www.instagram.com/malishubham025/">
+          <p data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
+            Instagram
+          </p>
+          </a>
+          <p onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} data-aos={"fade-right"} style={{ color: "white", textDecoration: "none" }}>
             Gmail
           </p>
           {popupVisible && (

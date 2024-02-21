@@ -25,16 +25,24 @@ function Project(props) {
   }, []);
 
   return (
-    <div className="video-container" data-aos="fade-right">
-      <div className="display"></div>
-      <video className="background-video" loop muted style={{ width: "410px", height: "230px" }}>
-        <source src={props.src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="content">
-        <p>{props.name}</p>
-        <div className="content-line"></div>
-      </div>
+    <div data-aos="fade-right">
+      
+      <div className="video-container" >
+        
+          <div className="display"></div>
+          <video className="background-video" loop muted style={{ width: "410px", height: "230px" }}>
+            <source src={props.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="content">
+            <p>{props.name}</p>
+            <div className="content-line"></div>
+          </div>
+        </div> 
+        <a href={props.link}><button className="project-button">
+          {/* <span className="expand">h</span> */}
+          <span>Complete Project</span></button>
+        </a>
     </div>
   );
 }

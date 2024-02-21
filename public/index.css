@@ -1,5 +1,5 @@
 body{
-    scroll-behavior: smooth !important;
+    
     /* scroll-padding: 100rem; */
     background-color: #100e17 !important;
     /* cursor: none !important; */
@@ -11,7 +11,9 @@ body{
 background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-
+html{
+    scroll-behavior: smooth !important;
+}
 
 .p2{
     position: absolute;
@@ -83,6 +85,7 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
 }
 
 .fo{
+    
     background-color: #1a1527;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 0;
@@ -97,10 +100,11 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
    
 }
 .inner_fo{
+    width: 70%;
    /* background-color: #100e17; */
    /* padding: 30px; */
    /* position: relative; */
-   width: 20rem;
+   /* width: 20rem; */
    /* margin: 0 530px 0 auto; */
    /* width: 40%;
    margin: 0 auto 0 auto; */
@@ -128,7 +132,10 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
 
 }
 .links{
+    /* background-color: #f5f3fa; */
+    padding: 10px;
     display: flex;
+    width:100%;
     /* justify-content: space-around; */
     /*
     flex-direction: row;
@@ -139,8 +146,10 @@ background-image: url("https://www.transparenttextures.com/patterns/crissxcross.
     /* background-color: #030303; */
 }
 .links p{
+    /* background-color: #5918df; */
+    margin-right: 60px;
     cursor: pointer;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .links p::before {
     content: "";
@@ -485,6 +494,45 @@ margin-left: 25%;
 
 }
 /* projects */
+.project-button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid;
+    color: white; /* This will be default color */
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-button::before {
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #dadada;
+    transition: width 0.1s ease-in;
+}
+
+.project-button span {
+    position: relative; /* Ensure that the span has a position to respect z-index */
+    z-index: 2; /* Ensure the span is above the pseudo-element */
+}
+.project-button:hover{
+    font-weight: 500;
+    scale: 1.1;
+}
+.project-button:hover span {
+    color: #030303;
+}
+
+.project-button:hover::before {
+    width: 100%;
+}
+
 .projects{
     position: relative;
     z-index: 1;
@@ -497,7 +545,7 @@ margin-left: 25%;
     padding-bottom: 20px;
     position: relative;
     width: 100%;
-    padding-right: 50px;
+    padding: auto;
     
 }
 .pHeader{
@@ -581,7 +629,7 @@ transition: 0.5s ease-in-out;
     padding: 0;
 
     left: 20px;
-    top: -290px;
+    top: -250px;
     /* bottom: 0; */
     font-family: 'Roboto Condensed', sans-serif;
     color: #100e17;
@@ -706,7 +754,7 @@ transition: 0.5s ease-in-out;
 @media screen and (max-width: 960px) {
 
     .projects{
-        padding-right: 70px;
+        padding: auto;
     }
     .projects > div {
         flex-direction: column;
@@ -773,7 +821,16 @@ transition: 0.5s ease-in-out;
     .root{
         width:100vw ;
     }
-  
+    .inner_fo{
+        width: 100%;
+       /* background-color: #100e17; */
+       /* padding: 30px; */
+       /* position: relative; */
+       /* width: 20rem; */
+       /* margin: 0 530px 0 auto; */
+       /* width: 40%;
+       margin: 0 auto 0 auto; */
+    }
 }
 
 

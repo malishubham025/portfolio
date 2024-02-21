@@ -26,7 +26,8 @@ function Info(props) {
   }, []);
 
   return (
-    <div className="info-container" data-aos="fade-right">
+    <div data-aos="fade-right">
+    <div className="info-container" >
       <div className="display"></div>
       <div className="i">
       <h1 style={{color:"white"}}>{props.heading}</h1>
@@ -36,6 +37,11 @@ function Info(props) {
         <p>{props.name}</p>
         <div className="content-line"></div>
       </div>
+    </div>
+    <a href={props.link}><button className="project-button">
+          {/* <span className="expand">h</span> */}
+          <span>Complete Project</span></button>
+        </a>
     </div>
   );
 }

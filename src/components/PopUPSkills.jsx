@@ -16,7 +16,9 @@ function PopThree(){
         <div data-aos="fade-in" className="p2">
              
            <p>C++</p>
-           <p>Solved 300+ problems on Leetcode</p>
+           <p>Data Structures </p>
+           <p>Algorithms </p>
+           <p>Solved 300+ problems on Leetcode platform</p>
         </div>
     )
 }

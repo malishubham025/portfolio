@@ -43,8 +43,9 @@ function About() {
                 onMouseOut={() => setWebDevPopupVisible(false)}
                 style={{cursor:"pointer", fontSize: "1.4rem", fontWeight: "100", textDecoration: "underline" }}
               >
-                Web development -
+                Web development →
               </h3>
+              
               {webDevPopupVisible && <PopTwo />}
             </div>
 
@@ -54,7 +55,7 @@ function About() {
                 onMouseOut={() => setProblemSolvingPopupVisible(false)}
                 style={{cursor:"pointer", fontSize: "1.4rem", fontWeight: "100", textDecoration: "underline" }}
               >
-                Problem Solving -
+                Problem Solving →
               </h3>
               {problemSolvingPopupVisible && <PopThree />}
             </div>
@@ -65,6 +66,7 @@ function About() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

@@ -24,7 +24,8 @@ function Vertical(props) {
   }, []); 
 
   return (
-    <div className="verticle-video-container" data-aos="fade-right" >
+    <div data-aos="fade-right">
+    <div className="verticle-video-container"  >
       <div className="display"></div>
       <video className="verticle-background-video" loop muted style={{ width: "252px", height: "432px" }}>
         <source src={props.src} type="video/mp4" />
@@ -34,6 +35,11 @@ function Vertical(props) {
         <p>{props.name}</p>
         <div className="verticle-content-line"></div>
       </div>
+    </div>
+    <a href={props.link} style={{zIndex:"30 !important"}}><button className="project-button">
+          {/* <span className="expand">h</span> */}
+          <span>Complete Project</span></button>
+        </a>
     </div>
   );
 }

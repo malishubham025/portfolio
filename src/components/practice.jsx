@@ -17,19 +17,21 @@ function Lorem(){
             <h1 className="pHeader-three" >REACT</h1>
             </div>
             <div style={{display:"flex", width:"70%",padding:"20px" ,justifyContent:"flex-start"}}>
-                <Project name="Sorting Visualizer" src="/videos/sorting-visulizer.mp4"></Project>
+                <Project name="Sorting Visualizer" src="/videos/sorting-visulizer.mp4" link="https://github.com/malishubham025/Sorting-visualizer-project"></Project>
             </div>
             <div  style={{display:"flex", width:"100%",padding:"20px" ,justifyContent:"space-around" }}>
             <div className="box" >
-            <Vertical name="To do List " src="/videos/to_do_list.mp4" ></Vertical>
+            <Vertical name="To do List " src="/videos/to_do_list.mp4" link="https://github.com/malishubham025/To-Do-List-Using-React" ></Vertical>
             </div>
                 <div style={{marginTop:"50px"}}>
-                <Project name="Resume Builder" src="/videos/Resume_builder.mp4" ></Project>
+                <Project name="Resume Builder" src="/videos/Resume_builder.mp4" link="https://github.com/malishubham025/Resume-Builder-with-React" ></Project>
                 </div>
             </div>
             <div style={{display:"flex", width:"100%",padding:"20px",marginTop:"170px" ,justifyContent:"space-around" ,position:"relative"}}>
             <h1 className="ai-ml" data-aos="fade-in">AI ML</h1>
-                <Info name="Scene Caption Generation" 
+                <Info 
+                    link=""
+                    name="Scene Caption Generation" 
                     heading="Scene Caption Generation"
                     info={[
                         "This is the Deep learning  based project for scene caption generation. \n",
@@ -39,7 +41,9 @@ function Lorem(){
                     ]}
                     ></Info>
                 <div style={{marginTop:"50px"}}>
-                <Info name="Floating Waste Collector" 
+                <Info
+                 link="https://github.com/malishubham025/Computer-vision-based-floating-waste-collector"
+                 name="Floating Waste Collector" 
                     heading="Floating Waste Collector"
                     info={[
                         "This is the haar cascade based floating waste collector \n",
@@ -52,7 +56,7 @@ function Lorem(){
                 </div>
             </div>
             <div style={{display:"flex", width:"100%",padding:"20px",marginTop:"70px" ,justifyContent:"space-around"}} >
-                <Project name="2048 AI" src="/videos/AI 2048.mp4"></Project>
+                <Project name="2048 AI" src="/videos/AI 2048.mp4" link="https://github.com/malishubham025/2048_AI"></Project>
                 
             </div>
         </div>
