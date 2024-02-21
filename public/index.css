@@ -294,7 +294,7 @@ margin-left: 25%;
     /* background-color: aliceblue; */
     position: relative;
     z-index: -1;
-    transform: translateY(190px);
+    transform: translateY(200px);
     transition: 0.5s ease-in-out;
     width: 100%; /* Adjust the width based on your design */
     /* top: 0; */
@@ -492,7 +492,9 @@ margin-left: 25%;
     flex-direction: column;
     /* height: fit-content; */
     padding-bottom: 20px;
-    width: 100%;
+    position: relative;
+    width: 100vw !important;
+    
 }
 
 .pHeader{
@@ -688,7 +690,13 @@ transition: 0.5s ease-in-out;
 }
 /* projects */
 
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 @media screen and (max-width: 960px) {
+
     .projects > div {
         flex-direction: column;
         align-items: center;
@@ -757,6 +765,10 @@ transition: 0.5s ease-in-out;
         margin: 10px auto 10px auto;
         width: 30%;
         font-size: 1.5rem;
+    }
+    .project {
+        width: 100vw;
+        /* Additional mobile styles if needed */
     }
 }
 .container{
